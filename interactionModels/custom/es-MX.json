@@ -1,0 +1,622 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "bento tomodachi",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "para"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "EggIntent",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.Person",
+              "samples": [
+                "{name}",
+                "me gusta {name}",
+                "{name} suena bien",
+                "que se llame {name}",
+                "se va a llamar {name}"
+              ]
+            }
+          ],
+          "samples": [
+            "abrir taikiyaki",
+            "quiero que abras el huevito",
+            "quiero que abras el huevo",
+            "me gusta el nombre de {name}",
+            "su nombre sera {name}",
+            "abre el huevito",
+            "abre huevito",
+            "huevo abierto",
+            "abre el huevo",
+            "abre huevo",
+            "{name}",
+            "que se llame {name}",
+            "la quiero nombrar {name}",
+            "quiero que se llame {name}",
+            "su nombre va a ser {name}",
+            "se va a llamar {name}"
+          ]
+        },
+        {
+          "name": "BathIntent",
+          "slots": [
+            {
+              "name": "nombre",
+              "type": "AMAZON.Person"
+            }
+          ],
+          "samples": [
+            "limpiar bentochi",
+            "limpiar mi bentochi",
+            "dar un baño a mi bentochi",
+            "bañar bentochi",
+            "bañar a mi bentochi",
+            "hora del baño para {nombre}",
+            "hora de bañar a {nombre}",
+            "dar baño a {nombre}",
+            "limpiar a {nombre}",
+            "limpiar",
+            "hora de bañar",
+            "hora del baño",
+            "dar baño",
+            "baño",
+            "dar un baño",
+            "dale una enjuagada a {nombre}",
+            "una enjuagada",
+            "duchar",
+            "baña",
+            "enjuagar",
+            "ducha",
+            "regaderazo",
+            "dale un regaderazo a {nombre}",
+            "enjuaga a {nombre}",
+            "dale un baño a {nombre}",
+            "bañar a {nombre}",
+            "baña a {nombre}",
+            "bañar",
+            "a bañarse",
+            "es hora de un baño"
+          ]
+        },
+        {
+          "name": "FeedIntent",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.Person"
+            }
+          ],
+          "samples": [
+            "dar alimento bentochi",
+            "alimentar bentochi",
+            "alimentar a mi bentochi",
+            "dar de comer bentochi",
+            "dar de comer a mi bentochi",
+            "dar alimento",
+            "dar de comida",
+            "merendendar",
+            "comida con {name}",
+            "hay que comer con {name}",
+            "hay que comer",
+            "dale su lunch",
+            "dar lunch",
+            "dale su sopita",
+            "dale sopita",
+            "alimenta",
+            "dale su sopita a {name}",
+            "dar de comer a {name}",
+            "vamos a comer con {name}",
+            "dale de comer a {name}",
+            "dale su lunch a {name}",
+            "alimenta a {name}",
+            "hora de alimentacion",
+            "hora del lunch",
+            "almorzar",
+            "alimentar",
+            "dar de comer",
+            "dar comida",
+            "merienda",
+            "sopita",
+            "comida",
+            "a comer"
+          ]
+        },
+        {
+          "name": "SickIntent",
+          "slots": [
+            {
+              "name": "nombre",
+              "type": "AMAZON.Person"
+            }
+          ],
+          "samples": [
+            "dar medicina a mi bentochi",
+            "dar medicina bentochi",
+            "curar a mi bentochi",
+            "curar bentochi",
+            "dale una pastillita a {nombre}",
+            "dale medicina a {nombre}",
+            "medicina a {nombre}",
+            "dale salud a {nombre}",
+            "dar medicina a {nombre}",
+            "cura a {nombre}",
+            "dale su jarabito a {nombre}",
+            "medicinar",
+            "curación",
+            "dar medicina",
+            "medicina",
+            "curar",
+            "salud"
+          ]
+        },
+        {
+          "name": "GiveLoveIntent",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.Person"
+            }
+          ],
+          "samples": [
+            "jugar con bentochi",
+            "jugar con mi bentochi",
+            "apapachar",
+            "apapacha a {name}",
+            "hay que jugar con {name}",
+            "hora de jugar con {name}",
+            "juego con {name}",
+            "diversión con {name}",
+            "jugar con {name}",
+            "vamos a jugar con {name}",
+            "recreo",
+            "hora de divertirse",
+            "divertirse",
+            "divertir",
+            "diversion",
+            "hora de la diversion",
+            "hay que diveritirnos",
+            "vamos a jugar un juego",
+            "jugar ahora",
+            "hay que jugar",
+            "juego",
+            "es hora de jugar",
+            "jugar"
+          ]
+        },
+        {
+          "name": "StatusIntent",
+          "slots": [
+            {
+              "name": "nombre",
+              "type": "AMAZON.Person"
+            },
+            {
+              "name": "tipoEstado",
+              "type": "estado"
+            }
+          ],
+          "samples": [
+            "estado de mi bentochi",
+            "como esta mi bentochi",
+            "mi bentochi {tipoEstado}",
+            "mi mascota {tipoEstado}",
+            "{tipoEstado}",
+            "dime el estado",
+            "cual es el estado",
+            "como va",
+            "estado de salud",
+            "salud de mi mascota",
+            "estado de mi mascota",
+            " como se siente",
+            "como esta",
+            "salud de {nombre}",
+            "le duele algo a {nombre}",
+            "estado de {nombre}",
+            "dime el estado de salud de {nombre}",
+            "dime el estado de {nombre}",
+            "cual es el estado de {nombre}",
+            "como esta {nombre}",
+            "como se siente {nombre}",
+            "como es el estado de {nombre}",
+            "como va {nombre}",
+            "estado"
+          ]
+        },
+        {
+          "name": "SleepTimeIntent",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.Person"
+            }
+          ],
+          "samples": [
+            "mimir {name}",
+            "a mimir {name}",
+            "a mimir bentochi",
+            "mandar a dormir a mi bentochi",
+            "mandar a dormir a bentochi",
+            "dormir bentochi",
+            "dormir a mi bentochi",
+            "mimir",
+            "a mimir ",
+            "mandar a dormir a {name}",
+            "dormir a {name}",
+            "dormir",
+            "mandar a dormir",
+            "a la cama",
+            "{name} duerme",
+            "{name} a dormir",
+            "{name} hora de dormir",
+            "tiempo de dormir de {name}",
+            "duerme a {name}",
+            "duerme ",
+            "pon a {name} a dormir",
+            "manda a {name} a dormir",
+            "pon a dormir a {name}",
+            "manda a dormir a {name}",
+            "tiempo de dormir",
+            "a dormir ",
+            "hora de dormir"
+          ]
+        },
+        {
+          "name": "RepetirIntent",
+          "slots": [
+            {
+              "name": "accion",
+              "type": "acciones"
+            }
+          ],
+          "samples": [
+            "de nuevo {accion}",
+            "otra vez {accion}",
+            "{accion} de nuevo",
+            "{accion} otra vez",
+            "hazlo de nuevo",
+            "hazlo otra vez",
+            "repite",
+            "de nuevo",
+            "repetir",
+            "otra vez"
+          ]
+        },
+        {
+          "name": "TypeIntent",
+          "slots": [],
+          "samples": [
+            "como es mi bentochi",
+            "tipo de bentochi",
+            "tipo de mi bentochi",
+            "tipo mascota",
+            "que tipo",
+            "como es mi mascota virtual",
+            "que es mi mascota virtual",
+            "que tipo de mascota virtual tengo",
+            "que especie es mi mascota virtual",
+            "tipo de mascota virtual",
+            "especie de mascota virtual",
+            "especie de mascota",
+            "tipo de mascota",
+            "que especie es mi mascota",
+            "que tipo de mascota tengo",
+            "tipo de mi mascota",
+            "especie de mi mascota",
+            "que mascota tengo",
+            "como es mi mascota",
+            "que es mi mascota"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "escuchar"
+              }
+            },
+            {
+              "name": {
+                "value": "decir"
+              }
+            },
+            {
+              "name": {
+                "value": "repetir"
+              }
+            },
+            {
+              "name": {
+                "value": "dimelo"
+              }
+            },
+            {
+              "name": {
+                "value": "dime"
+              }
+            },
+            {
+              "name": {
+                "value": "juega"
+              }
+            },
+            {
+              "name": {
+                "value": "cura"
+              }
+            },
+            {
+              "name": {
+                "value": "da de comer"
+              }
+            },
+            {
+              "name": {
+                "value": "dale de comer"
+              }
+            },
+            {
+              "name": {
+                "value": "baña"
+              }
+            },
+            {
+              "name": {
+                "value": "comer"
+              }
+            },
+            {
+              "name": {
+                "value": "curar"
+              }
+            },
+            {
+              "name": {
+                "value": "jugar"
+              }
+            },
+            {
+              "name": {
+                "value": "bañar"
+              }
+            }
+          ],
+          "name": "acciones"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "nivel de limpieza"
+              }
+            },
+            {
+              "name": {
+                "value": "nivel de salud"
+              }
+            },
+            {
+              "name": {
+                "value": "tengo que bañar a mi mascota"
+              }
+            },
+            {
+              "name": {
+                "value": "tengo que curar a mi mascota"
+              }
+            },
+            {
+              "name": {
+                "value": "esta saludable"
+              }
+            },
+            {
+              "name": {
+                "value": "necesita curarcion"
+              }
+            },
+            {
+              "name": {
+                "value": "estado de salud"
+              }
+            },
+            {
+              "name": {
+                "value": "mi mascota se siente mal"
+              }
+            },
+            {
+              "name": {
+                "value": "mi mascota esta enferma"
+              }
+            },
+            {
+              "name": {
+                "value": "mi mascota esta sucia"
+              }
+            },
+            {
+              "name": {
+                "value": "mi mascota esta limpia"
+              }
+            },
+            {
+              "name": {
+                "value": "esta bañado"
+              }
+            },
+            {
+              "name": {
+                "value": "limpieza"
+              }
+            },
+            {
+              "name": {
+                "value": "esta sucia"
+              }
+            },
+            {
+              "name": {
+                "value": "esta limpia"
+              }
+            },
+            {
+              "name": {
+                "value": "necesita un baño"
+              }
+            },
+            {
+              "name": {
+                "value": "nivel hambre"
+              }
+            },
+            {
+              "name": {
+                "value": "nivel felicidad"
+              }
+            },
+            {
+              "name": {
+                "value": "cuanta felicidad"
+              }
+            },
+            {
+              "name": {
+                "value": "nivel de felicidad"
+              }
+            },
+            {
+              "name": {
+                "value": "felicidad"
+              }
+            },
+            {
+              "name": {
+                "value": "nivel de hambre"
+              }
+            },
+            {
+              "name": {
+                "value": "cuanta hambre"
+              }
+            },
+            {
+              "name": {
+                "value": "tiene hambre"
+              }
+            },
+            {
+              "name": {
+                "value": "hambre"
+              }
+            }
+          ],
+          "name": "estado"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "EggIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.Person",
+              "elicitationRequired": true,
+              "confirmationRequired": true,
+              "prompts": {
+                "confirmation": "Confirm.Slot.1038980618888.880187001509",
+                "elicitation": "Elicit.Slot.853340034087.13595355582"
+              },
+              "validations": [
+                {
+                  "type": "isNotInSet",
+                  "prompt": "Slot.Validation.574347895451.333762455390.1032431455238",
+                  "values": [
+                    "chao"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SickIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "nombre",
+              "type": "AMAZON.Person",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.853340034087.13595355582",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Recuerda que no podrás cambiar el nombre después. ¿Cuál va a ser el nombre de tu mascota?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.853340034087.13595355582",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Recuerda que no podrás cambiar su nombre, ¿Estas seguro que quieres nombrarla {name} ?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1038980618888.880187001509",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Se llamará {name} , ¿seguro?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.574347895451.333762455390.1032431455238",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "No puedo nombrar a tu mascota chao porque no sabría si me estás diciendo a adiós."
+          }
+        ]
+      }
+    ]
+  },
+  "version": "67"
+}

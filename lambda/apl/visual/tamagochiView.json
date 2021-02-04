@@ -1,0 +1,101 @@
+{
+    "type": "APL",
+    "version": "1.4",
+    "settings": {},
+    "import": [
+        {
+            "name": "alexa-layouts",
+            "version": "1.2.0"
+        }
+    ],
+    "resources": [],
+    "styles": {},
+    "onMount": [],
+    "graphics": {},
+    "commands": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "item": [
+            {
+                "type": "Container",
+                "height": "100vh",
+                "items": [
+                    {
+                        "type": "AlexaBackground",
+                        "backgroundImageSource": "https://i.ibb.co/1bCdXsX/Background0000.png",
+                        "backgroundBlur": false,
+                        "colorOverlay": false,
+                        "backgroundScale": "best-fill"
+                    },
+                    {
+                        "type": "Container",
+                        "height": "90vh",
+                        "width": "100vw",
+                        "items": [
+                            {
+                                "type": "AlexaHeader",
+                                "headerAttributionImage": "${payload.launchData.properties.headerImage}",
+                                "headerSubtitle": "${payload.launchData.properties.headersubTitle}",
+                                "headerTitle": "${payload.launchData.properties.headerTitle}",
+                                "headerAttributionPrimacy": false,
+                                "textAlign": "center"
+                            },
+                            {
+                                "type": "Container",
+                                "width": "100%",
+                                "height": "70%",
+                                "justifyContent": "start",
+                                "alignItems": "center",
+                                "paddingLeft": "@marginHorizontal",
+                                "paddingRight": "@marginHorizontal",
+                                "items": [
+                                    {
+                                        "type": "AlexaImage",
+                                        "imageSource": "${payload.launchData.properties.tamagochiAvatar}",
+                                        "imageRoundedCorner": false,
+                                        "imageScale": "best-fit",
+                                        "imageAlignment": "center",
+                                        "imageWidth": "${@viewportProfile == @hubRoundSmall ? '70%' : '100%'}",
+                                        "imageAspectRatio": "${@viewportProfile == @hubRoundSmall ? 'square' : 'standard_landscape'}",
+                                        "imageBlurredBackground": false,
+                                        "grow": "${@viewportProfile == @hubRoundSmall ? 0 : 1}"
+                                    },
+                                    {
+                                        "type": "Text",
+                                        "width": "300dp",
+                                        "height": "50dp",
+                                        "paddingTop": "12dp",
+                                        "paddingBottom": "12dp",
+                                        "text": "${payload.launchData.properties.tamagochiName}",
+                                        "fontSize": "35dp",
+                                        "textAlign": "center",
+                                        "color": "#1E2222",
+                                        "textAlignVertical": "bottom",
+                                        "fontStyle": "normal"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                     {
+                        "type": "Text",
+                        "when": "${@viewportProfile == @hubLandscapeSmall || @viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge || @viewportProfile == @tvLandscapeXLarge}",
+                        "width": "900dp",
+                        "height": "40dp",
+                        "paddingTop": "12dp",
+                        "text": "${payload.launchData.properties.alexaHint}",
+                        "fontSize": "28dp",
+                        "textAlignVertical": "center",
+                        "textAlign": "left",
+                        "fontStyle": "italic",
+                        "fontFamily": "Times new roman",
+                        "left": "5%"
+                    }
+                ]
+            }
+        ]
+    }
+}

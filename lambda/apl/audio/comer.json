@@ -1,0 +1,41 @@
+{
+    "version": "0.9",
+    "type": "APLA",
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "item": {
+            "type": "Mixer",
+            "description": "The Mixer component plays a set of audio clips at the same time. See docs for more information.",
+            "items": [
+                {
+                    "type": "Sequencer",
+                    "description": "The Sequencer component plays a series of audio clips one after another.",
+                    "items": [
+                        {
+                            "type": "Audio",
+                            "description": "Comida",
+                            "source": "https://audio.jukehost.co.uk/Qowf8SI8rUPVZfFiOx3VMgVGdTLsXIBE"
+                        },
+                        {
+                            "type": "Speech",
+                            "contentType": "SSML",
+                            "content": "${payload.data.properties.speak}"
+                        },
+                        {
+                            "type": "Audio",
+                            "description": "Comida",
+                            "source": "https://audio.jukehost.co.uk/Qowf8SI8rUPVZfFiOx3VMgVGdTLsXIBE"
+                        }
+                    ]
+                },
+                {
+                    "type": "Audio",
+                    "description": "The Audio component plays the provided audio file, such as an MP3 file. See docs for more information.",
+                    "source": "https://audio.jukehost.co.uk/31Lu6PPSR8FER1wLYqpnkmEFwcAWr2Lj"
+                }
+            ]
+        }
+    }
+}
